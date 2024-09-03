@@ -29,8 +29,8 @@ class Insercao extends Geracao {
    @Override
    public void sort() {
 		for (int i = 1; i < n; i++) {
-			int tmp = array[i];
-         int j = i - 1;
+			int tmp = array[i]; //Comparante (da frente)
+         int j = i - 1; //Comparável  (de trás)
 
          while ((j >= 0) && (array[j] > tmp)) {
             array[j + 1] = array[j];
